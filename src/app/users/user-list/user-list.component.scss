@@ -1,18 +1,27 @@
-.container {
-    padding: 1rem;
-  }
-  
-  .search-field {
-    width: 100%;
+.form-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 16px;
+}
+
+
+.search-add-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+
+  .search-box {
+    flex: 1;
     max-width: 400px;
-    margin-bottom: 1rem;
   }
-  
+
   .add-button {
-    margin: 1rem 0;
+    margin-left: auto;
   }
-  
-  .table-container {
-    overflow: auto;
-  }
-  
+}
+
+.table-container {
+  overflow-x: auto;
+}
+

@@ -14,10 +14,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
+import { MatCardModule } from '@angular/material/card';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
-  declarations: [UserListComponent, UserFormComponent,UserListComponent ],
+  declarations: [UserListComponent, UserFormComponent, UserListComponent], //declared components
   imports: [
     CommonModule,
     FormsModule,
@@ -30,7 +33,10 @@ import { MatTableModule } from '@angular/material/table';
     MatIconModule,
     MatDialogModule,
     MatPaginatorModule,
-    MatTableModule
-  ],
+    MatTableModule,
+    MatSortModule,
+    MatCardModule,
+    MatTooltipModule,
+  ], //here declared modules of angular materials and forms module
 })
 export class UsersModule {}

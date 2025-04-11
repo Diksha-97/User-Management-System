@@ -4,9 +4,9 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserFormComponent } from './user-form/user-form.component';
 
 const routes: Routes = [
-  { path: '', component: UserListComponent },       // List users
-  { path: 'add', component: UserFormComponent },     // Add new user
-  { path: 'edit/:id', component: UserFormComponent } // Edit user by ID
+  { path: '', component: UserListComponent },       // List users (details page)
+  { path: 'add', component: UserFormComponent },     // Add new user(form page)
+  { path: 'edit/:id', component: UserFormComponent } // Edit user by ID(form page)
 
 ];
 
