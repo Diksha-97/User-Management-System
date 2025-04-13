@@ -3,16 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
-    loadChildren: () =>
-      import('./users/users.module').then((m) => m.UsersModule),
-  }, //user module route
-
-  { path: '**', redirectTo: '' }, // fallback route
+    path: '', loadChildren: () => import('./form/form.module').then(m => m.FormModule)
+    // importing form module here
+  },
+  { path: '**', redirectTo: '' } // fallback route
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
